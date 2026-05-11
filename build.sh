@@ -1,4 +1,9 @@
 #!/bin/bash
+python3 -m venv build-env
+source build-env/bin/activate
+pip install --upgrade pip
+pip install PyQt5 pyinstaller
+
 pyinstaller \
   --onefile \
   --windowed \
